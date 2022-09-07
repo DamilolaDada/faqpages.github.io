@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html{
+  font-family:'Playfair Display', serif;
+  font-size: 15px;
+  box-sizing: border-box;
+  line-height: 2;
+}
+section{
+  width: 100%;
+  /* height: 100vh; */
+  background-color:#DFE8CC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  width: 100%;
+  max-width:650px;
+  margin: 50px auto;
+
+}
+.accordion-item{
+  background:#6c9468;
+  border-radius: .4rem;
+  padding:2rem;
+  margin-bottom: 1.2rem;
+  box-shadow:
+}
+
+.accordion-link{
+  font-size: 1.4rem;
+  color: #1C6758;
+  text-decoration: none;
+  background-color: ;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.accordion-link i{
+  color: #A7D2CB;
+  padding: .5rem
+}
+.accordion-link .remove-icon{
+  display: none;
+}
+
+.answer{
+  max-height: 0px;
+  overflow: hidden;
+  position: relative;
+  transition: 850ms;
+}
+
+ul{
+  color: #3D8361;
+  line-height: 2;
+  font-weight: bolder;
+
+}
+
+ol{
+  color: #1C6758;
+  font-weight: bold;
+}
+
+.answer p{
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+.accordion-item:target .answer{
+  max-height: 100em;
+}
+.accordion-item:target .accordion-link .add-icon{
+  display: none;
+}
+.accordion-item:target .accordion-link .remove-icon{
+  display: block;
+
+}
